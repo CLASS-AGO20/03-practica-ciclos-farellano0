@@ -8,8 +8,22 @@ export default class App {
         }
         return fact;
     }
+    convertirAString(numero){
+        let i = 1;
+        let resultado = "";
+        
+        while(i <= numero){
+             resultado = "*" + resultado;
+            i++;
+        }
+
+        return resultado;
+    }
+
 }
 
 let app = new App();
 
 console.log(app.factorial(5));
+
+console.log(app.convertirAString(5));
