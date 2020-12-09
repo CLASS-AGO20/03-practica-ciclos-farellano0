@@ -19,6 +19,20 @@ export default class App {
 
         return resultado;
     }
+    obtenerDivisibles(numero){
+        let i = numero;
+        let div = 0;
+        let a = numero;
+
+        do{
+            if(a % i == 0){
+                div ++; 
+            }
+            i --;
+
+        } while (i >= 1);
+        return div;
+    }
 
 }
 
@@ -27,3 +41,5 @@ let app = new App();
 console.log(app.factorial(5));
 
 console.log(app.convertirAString(5));
+
+console.log(app.obtenerDivisibles(6));
