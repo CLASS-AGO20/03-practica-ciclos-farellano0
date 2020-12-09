@@ -33,6 +33,14 @@ export default class App {
         } while (i >= 1);
         return div;
     }
+    elevar(numero, potencia){
+        let res = 1
+
+        for(let i = 1; i <= potencia; i++){
+            res = res * numero;
+        }
+        return res;
+    }
 
 }
 
@@ -43,3 +51,5 @@ console.log(app.factorial(5));
 console.log(app.convertirAString(5));
 
 console.log(app.obtenerDivisibles(6));
+
+console.log(app.elevar(3,4));
